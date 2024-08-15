@@ -11,22 +11,22 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name="Product")
+@Table(name="products")
 @Data
-public class Products {
+public class Product {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name="name")
+	@Column(name="name_product")
 	private String name;
 	
-	@Column(name="description")
+	@Column(name="description_product")
 	private String description;
 	
-	@Column(name="price")	
-	private String price;	
+	@Column(name="price_product")	
+	private Long price;	
 	
 	
 }
